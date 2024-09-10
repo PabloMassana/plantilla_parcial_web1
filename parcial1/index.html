@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="Logo del Producto" />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="ul_links">
+          <li id="benefits_link">Beneficios</li>
+
+          <li id="features_link">Características</li>
+
+          <li id="testimonials_link">Testimonios</li>
+
+          <li id="cta_link">Compra ahora</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de Beneficios -->
+    <section id="benefits">
+      <h2>Beneficios por jugarlo</h2>
+      <div class="benefits-list">
+        <article class="benefit">
+          <img src="assets/img/icon1.png" alt="beneficio1" />
+          <p>Da un contexto a los sucesos de Binding Blade</p>
+        </article>
+        <article class="benefit">
+          <img src="assets/img/icon2.png" alt="benficio2" />
+          <p>Posee un buena seleccion de dificultad</p>
+        </article>
+        <article class="benefit">
+          <img src="assets/img/icon3.png" alt="beneficio3" />
+          <p>Ayuda a que te familiarices con la franquicia</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="features">
+      <h2>Características Clave</h2>
+      <div class="features-list">
+        <article class="feature">
+          <img src="assets/img/feature1.png" alt="Característica1" />
+          <p>Introducción del primer avatar en Fire Emblem</p>
+          <div class="descyption-overlay">
+            <p>
+              Pese a tener poca participación, el avatar Mark de Blazing Blade fue un prototipo de lo que luego
+              seria el avatar de los siguientes Fire Emblem con mayor relevancia.
+            </p>
+          </div>
+        </article>
+        <article class="feature">
+          <img src="assets/img/feature2.png" alt="Característica2" />
+          <p>La rejugabilidad una vez completado el modo normal</p>
+          <div class="descyption-overlay">
+            <p>
+              Una vez se completa la campaña base que es la que compone del modo Lyn y Eliwood, permite seleccionar el
+              modo Hector cuya dificultad es mayor a los anteriores modos, aunque tampoco es un juego injusto.
+            </p>
+        </article>
+        <article class="feature">
+          <img src="assets/img/feature3.png" alt="Característica3" />
+          <p>
+            Añade más información al continente donde se desarrolla Binding Blade
+          </p>
+          <div class="descyption-overlay">
+            <p>
+              El continente de Elibe en Binding Blade si bien es explorado se sabe que está bastante afectado por la guerra que
+              acontece para entonces, es así que en Blazing Blade podemos ver como era el continente de Elibe 20 años antes,
+              teniendo algunos cambios significativos.
+            </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonials">
+      <h2>Testimonios de Clientes</h2>
+      <div class="testimonial-slider">
+        <article class="testimonial">
+          <img src="assets/img/user1.png" alt="Cliente1" />
+          <blockquote>"Tremendo juego, adoro a Hector."</blockquote>
+          <p>- Juan Pérez</p>
+        </article>
+        <article class="testimonial">
+          <img src="assets/img/user2.png" alt="Cliente2" />
+          <blockquote>
+            "Muy divertido, aunque Eliwood es nefasto como Lord."
+          </blockquote>
+          <p>- María López</p>
+        </article>
+        <article class="testimonial">
+          <img src="assets/img/user3.png" alt="Cliente3" />
+          <blockquote>
+            "Adoro a Lyn, me trae recuerdos al ser mi primer fire emblem."
+          </blockquote>
+          <p>- Roberto Nuñez</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Llamada a la acción -->
+    <section id="cta">
+      <h2>Compra el Producto Ahora</h2>
+      <button>Compra Ahora</button>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="social-links">
+        <a href="#"
+          ><img src="assets/img/facebook.png" alt="Facebook" />Facebook</a
+        >
+        <a href="#"
+          ><img src="assets/img/twitter.png" alt="Twitter" />Twitter</a
+        >
+      </div>
+      <a href="#" id="button_modal">Términos y condiciones</a>
+      |
+      <a href="#" id="button_modal_private">Política de privacidad</a>
+      <p>&copy; 2024 Nombre del Producto. Todos los derechos reservados.</p>
+    </footer>
+
+    <!--Sección modal -->
+    <section id="modal" class="modal_container">
+      <div class="modal_content">
+        <img src="assets/img/logo.png" alt="logo" class="modal_img"/>
+        <h2 class="modal_tittle">Terminos y condiciones</h2>
+        <h3 class="modal_subtittle">Introducción</h3>
+        <p class="modal_paragraph">
+          Al utilizar esta web y realizar una compra, aceptas estos términos y condiciones. 
+          Si no estás de acuerdo, no utilices nuestros servicios.
+        </p>
+        <h3 class="modal_subtittle">Compra y Pago</h3>
+        <p class="modal_paragraph">
+          Ofrecemos distintos métodos de pago seguros. 
+          Asegúrate de proporcionar la información correcta. Nos reservamos el derecho de rechazar cualquier pedido.
+        </p>
+        <h3 class="modal_subtittle">Envío y Entrega</h3>
+        <p class="modal_paragraph">
+          Los tiempos de entrega varían según la ubicación. 
+          No somos responsables de retrasos por el servicio de mensajería o aduanas.
+        </p>
+        <h3 class="modal_subtittle">Devoluciones</h3>
+        <p class="modal_paragraph">
+          Aceptamos devoluciones dentro de 30 días si el producto está sin usar. 
+          El cliente asume los costos de envío de la devolución.
+        </p>
+        <a href="#" class="modal_close">Cerrar</a>
+      </div>
+    </section>
+    <section id="private_modal" class="modal_container">
+      <div class="modal_content">
+        <img src="assets/img/logo.png" alt="logo" class="modal_img"/>
+        <h2 class="modal_tittle">Política de privacidad</h2>
+        <h3 class="modal_subtittle">Recopilación de datos</h3>
+        <p class="modal_paragraph">
+          Recopilamos información personal como nombre, correo electrónico y detalles 
+          de pago al realizar una compra o registrarte en la web.
+        </p>
+        <h3 class="modal_subtittle">Uso de la información</h3>
+        <p class="modal_paragraph">
+          Utilizamos tus datos para procesar pedidos, mejorar nuestros servicios y 
+          enviarte comunicaciones relacionadas con tus compras.
+        </p>
+        <h3 class="modal_subtittle">Protección de datos</h3>
+        <p class="modal_paragraph">
+          Implementamos medidas de seguridad para proteger tu información. No 
+          compartimos tus datos personales con terceros, excepto cuando sea necesario 
+          para procesar pedidos o cumplir con la ley.
+        </p>
+        <h3 class="modal_subtittle">Cookies</h3>
+        <p class="modal_paragraph">
+          Utilizamos cookies para mejorar la experiencia del usuario y personalizar el 
+          contenido. Puedes desactivarlas en la configuración de tu navegador.
+        </p>
+        <a href="#" class="private_modal_close">Cerrar</a>
+      </div>
+    </section>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
+
